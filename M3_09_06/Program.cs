@@ -19,6 +19,7 @@ class Program
         FavoriteBands.Add("Bob Dylan", new List<string>() { "Infidels" });
 
         Console.WriteLine(FavoriteBands.ContainsKey("Abba"));
+        FavoriteBands["ACDC"].Add("Highway to Hell");
         foreach (var performer in FavoriteBands.Keys)
         {
             Console.WriteLine($"\n{performer} albums:");
@@ -29,7 +30,6 @@ class Program
         }
 
         //Use Dictionary to map a key to the nr occurances in a list
-        //HashSet<T>
         List<RectColor> list = new List<RectColor>() { RectColor.red, RectColor.yellow, RectColor.red, RectColor.blue,
             RectColor.white, RectColor.pink, RectColor.red, RectColor.white };
 
